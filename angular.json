@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-tudo": {
+    "angular-todo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-tudo",
+            "outputPath": "dist/angular-todo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-tudo:build"
+            "browserTarget": "angular-todo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-tudo:build:production"
+              "browserTarget": "angular-todo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-tudo:build"
+            "browserTarget": "angular-todo:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-tudo:serve"
+            "devServerTarget": "angular-todo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-tudo:serve:production"
+              "devServerTarget": "angular-todo:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-tudo"
+  "defaultProject": "angular-todo"
 }

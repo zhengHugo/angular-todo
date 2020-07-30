@@ -148,5 +148,11 @@
   },
   "rulesDirectory": [
     "codelyzer"
+  ],
+  /* ****** customized configurations ***** */
+  // spaces in curly brackets in import/export statements
+  "whitespace": [
+    true,
+    "check-module"
   ]
 }
